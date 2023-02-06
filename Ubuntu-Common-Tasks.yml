@@ -1,0 +1,7 @@
+- name: Default Playbook - Starting Deploy
+  hosts: all 
+  roles: 
+    - Ubuntu-Update
+    - Ubuntu-Banner
+    - Ubuntu-Timezone
+    - Install-Packages

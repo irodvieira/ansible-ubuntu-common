@@ -1,0 +1,28 @@
+---
+- name: Install Packages
+  apt:
+    name: "{{ item }}"
+    update_cache: yes
+  loop:
+    - vim
+    - curl
+    - unzip
+    - net-tools 
+    - ntp
+    - ntpdate 
+    - screen 
+    - less 
+    - bzip2 
+    - htop 
+    - nmap 
+    - tcpdump 
+    - rsync 
+    - traceroute 
+    - iptraf 
+    - iperf 
+    - wget 
+    - nano 
+    - git 
+    - sysstat 
+    - multitail
+    - tree

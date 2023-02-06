@@ -1,0 +1,8 @@
+---
+- name: Add Motd
+  template: src=motd dest=/etc/motd force=yes owner=root group=root mode=0755
+
+- name: Add SSH Banner
+  copy: src=banner_ssh dest=/etc/ssh/banner_ssh
+  notify:
+    - Restart SSH  
